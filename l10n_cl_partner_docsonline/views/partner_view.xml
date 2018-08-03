@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_update_button_form" model="ir.ui.view">
+            <field name="name">view.update.button.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="l10n_cl_invoice.view_res_partner_form_sii_docs"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <div>
+                        <button
+                            string="Actualizar desde www.documentosonline.cl"
+                            type="object" name="press_to_update"
+                            class="oe_inline"/>
+                    </div>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+
